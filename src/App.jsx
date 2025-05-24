@@ -30,7 +30,7 @@ function App() {
           <Route
             path="login"
             element={
-              <RestrictedRoute component={<LoginPage />} redirectTo="/" />
+              <RestrictedRoute component={<LoginPage />} redirectTo="/contacts" />
             }
           />
           <Route
@@ -38,7 +38,7 @@ function App() {
             element={
               <RestrictedRoute
                 component={<RegistrationPage />}
-                redirectTo="/"
+                redirectTo="/contacts"
               />
             }
           />
