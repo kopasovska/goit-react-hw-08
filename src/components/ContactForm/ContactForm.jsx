@@ -3,7 +3,7 @@ import css from './ContactForm.module.css';
 import * as Yup from 'yup';
 import { useId } from 'react';
 import { useDispatch } from 'react-redux';
-import { addContact } from '../../redux/contactsOps';
+import { addContact } from '../../redux/contacts/operations';
 
 
 const ContactForm = () => {
@@ -14,7 +14,7 @@ const ContactForm = () => {
   const handleSubmit = (values, actions) => {
     dispatch(addContact({
       name: values.name,
-      phone: values.number,
+      number: values.number,
     }));
     actions.resetForm();
   };
@@ -68,7 +68,7 @@ const ContactForm = () => {
             className={css.errorMessage}
           />
         </span>
-        <button type="submit">Add</button>
+        <button type="submit" className={css.primaryButton}>Add</button>
       </Form>
     </Formik>
   );

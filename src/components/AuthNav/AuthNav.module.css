@@ -1,0 +1,16 @@
+.authMenu {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.authLink {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+
+    &:hover,
+    &:focus {
+        color: blue;
+    }
+}

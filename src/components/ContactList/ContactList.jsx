@@ -2,7 +2,7 @@ import css from './ContactList.module.css';
 import Contact from '../Contact/Contact';
 import { useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
-import { selectError, selectLoading, selectFilteredContacts } from '../../redux/contactsSlice';
+import { selectError, selectLoading, selectFilteredContacts } from '../../redux/contacts/selectors';
 
 
 const ContactList = () => {

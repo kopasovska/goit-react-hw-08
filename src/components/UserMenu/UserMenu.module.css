@@ -1,29 +1,13 @@
-.contactItem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  border: 2px solid rgb(30, 29, 29);
-  border-radius: 4px;
-  padding: 16px;
-
-  width: 320px;
+.userMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
-.deleteButton {
-  padding: 4px 8px;
-}
-
-.contactText {
-  display: flex;
-  align-items: center;
-}
-
-.icon {
-  height: 16px;
-  width: 16px;
-  margin-right: 8px;
-  color: rgb(30, 29, 29);
+.userMenuText {
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .primaryButton {
@@ -44,4 +28,8 @@
 .primaryButton:focus,
 .primaryButton:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.userMenuButton {
+  padding: 4px 8px;
 }
